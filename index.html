@@ -1,9 +1,242 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Project 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
 
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages</p>
+    <!-- START NAV BAR -->
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark sticky-top">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="active nav-link" href="#take-of">TAKE-OF</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-me">ABOUT ME</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle-split" href="#" id="navbardrop" data-toggle="dropdown">PROJECTS</a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a class="dropdown-item" href="surveyForm.html">Survey Form</a>
+                        <a class="dropdown-item text-white bg-secondary" href="hq-fs.html">Website HQ-FS</a>
+                        <a class="dropdown-item" href="portfolio.html">Portfolio Website</a>
+                        <a class="dropdown-item text-white bg-secondary" href="https://codepen.io/hq_coder/full/gzKOQL/">Tribute Page</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle-split" href="#" id="navbardrop" data-toggle="dropdown">DEVELOPMENT</a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a class="dropdown-item text-white bg-secondary" href="log.html">Event Log</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#support">SUPPORT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END NAV BAR -->
+
+    <!-- START TAKE OF BLOCK -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center jumbotron jumbotron-fluid alert" id="take-of">
+                <h6>TAKE-OF</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center alert alert-secondary">
+                <p>As a finance professional I focus on accounting, report preparation and data analysis, as a developer I want to learn how the software 'thinks'. I will develop my skills in HTML, CSS, JavaScript and Python (plus more after that). Here
+                    I will give an update of my finished projects. One of my first project is this website itself. I could choose a very fancy website build by someone else to show my amateuristic projects to make them look good, but why not show them
+                    in a website designed by myself from scratch? This way my website becomes personal and shows my website skills to you. Through time I will develop this website to show more and more of myself. I will add a logbook and a timeline on
+                    this website about the changes made to this website.</p>
+            </div>
+        </div>
+    </div>
+    <!-- END TAKE OF BLOCK -->
+    <!-- START ABOUT ME BLOCK -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center jumbotron jumbotron-fluid alert" id="about-me">
+                <h6>ABOUT ME</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center alert alert-secondary">
+                <p>Should I start with the obvious? I might just as well. My name is Marcus, currently 31 years old. Since 2004 I have been studying for financial accounting, economics and tax and working at the same time. Currently I hold a bachelor in
+                    economics and intend to continue my masters in professional accounting. The last 4 years I have lived and worked in The Netherlands, Australia and Indonesia. This year I will move to New Zealand to live and work for initially 1 year.
+                    I feel that I have to expand my knowledge and start learning about programming. Programming is a helpful skill to have and it is usefull to understand how the programs we work with function.</p>
+                <p><img src="http://i68.tinypic.com/vuv02.jpg" class="img-fluid"></p>
+            </div>
+        </div>
+    </div>
+    <!-- END ABOUT ME BLOCK -->
+    <!-- START PROJECTS BLOCK -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center alert" id="projects">
+                <h6>PROJECTS</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 text-center alert" style="background-color: silver; opacity: 0.5">
+                <h6>12-05-2018</h6>
+                <p><strong>My first project was a tribute page to <a href="https://codepen.io/hq_coder/full/gzKOQL/" target="_blank">Dr. Martin Luther King, Jr.</a> for my course on freeCodeCamp. My goal was to push all my content into the website through JavaScript.</strong></p>
+            </div>
+            <div class="col-sm-6 text-center alert" style="background-color: silver; opacity: 0.5">
+                <h6>16-05-2018</h6>
+                <p><strong>Currently I am making my own portfolio website (you're looking at it), also as part of my course on freeCodeCamp. For this project I try not to use JavaScript at all and only focus on CSS and include Bootstrap (4) as much as possible.</strong></p>
+            </div>
+        </div>
+    </div>
+    <!-- END PROJECTS BLOCK -->
+    <!-- START DEVELOPMENT BLOCK -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center jumbotron jumbotron-fluid alert" id="goals">
+                <h6>DEVELOPMENT</h6>
+            </div>
+        </div>
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+        HTML
+      </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        My goal is to understand the structure of HTML (the DOM). In the next 12 months I will focus on the way to keep the HTML part 'clean'. Make it easier to understand for other people so they can easily read what I have done and why. Also do I have to focus
+                        on where to write the different links to external sources, such as CSS, Bootstrap, JavaScript and other 'libraries'.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        CSS
+      </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        In the next 12 months I will learn to master Bootstrap and other necessary CSS properties to make a website mobile ready. I have two websites I want to build in the next months: the website for my financial business and my programming (this one) portfolio.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+        JavaScript
+      </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        In my first project I used JavaScript (jQuery) to push the objects to the DOM. I loved this way of working because it kept my HTML pretty clean. What I also like about JavaScript is the logical part and the mathematics. In the next 12 months I want to
+                        make my websites more dynamic. I also want to learn to use JavaScript to create (add-on) programs for my website. Another thing is that I would like to find out if I can use JavaScript to create programs that function between Microsoft
+                        programs. As Microsoft is great, but not perfect, I would like to personalize the software this way.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+        Python
+      </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        As we speak I do not know much (nothing) yet about Python. What I do know is that Python is used for back-end programming and it can be very usefull for finance related work. My goal for the next 12 months with Python is to understand the basics. What
+                        is Python, how can I use it and what can I build with it.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+        SQL
+      </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        I really want to learn how to integrate a database to my website. Now I have made an event log section under the development tag it is my goal to be able to add new events through the website itself so the events are added to the database and appear on
+                        the website without having to edit any HTML or JavaScript every time.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END GOALS BLOCK -->
+    <!-- START SUPPORT BLOCK -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center jumbotron jumbotron-fluid alert" id="support">
+                <h6>SUPPORT</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 text-center jumbotron jumbotron-fluid alert alert-secondary">
+                <p>Everyone is welcome to give feedback to my work. As a matter of fact, I would love it if you want and will give feedback to what I do. Together we can build applications and websites that are actually better than before. Use eachothers
+                    knowledge is the best way to develop our skills. Even though I am still a beginner and for you it might feel like you are contributing more than you can get from me. However, I will work hard to change this so one day I can contribute
+                    to others and perhaps even you.</p>
+                <p>
+                    </br>Please use the form below to submit any feedback to me. For now I will use a simple form (the method to send the feedback is currently being developed). In the future I would like to build in a better feature to be able to communicate
+                    with eachother on my website so that others can read it as well.</p>
+            </div>
+            <div class="col-sm-6 jumbotron jumbotron-fluid alert alert-secondary">
+                <form action="mailto: m.p.hacquebord@gmail.com" method="post" enctype="text/plain">
+                    Your name</br>
+                    <input type="text" name="Name" placeholder="Your name"></br>
+                    </br>
+                    Please write down your feedback here</br>
+                    <textarea style="height: auto; width: auto" name="Feedback" placeholder="Your feedback here"></textarea></br>
+                    </br>
+                    </br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END SUPPORT BLOCK -->
+    <!-- START CONTACT BLOCK -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center jumbotron jumbotron-fluid alert" id="contact">
+                <h6>CONTACT</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center jumbotron jumbotron-fluid alert social-media" id="social-media">
+                <button type="button" class="btn btn-outline-warning"><a href="https://www.linkedin.com/in/marcus-hacquebord" style="color:inherit" target="_blank">LINKEDIN</a></button>
+                <button type="button" class="btn btn-outline-warning"><a href="https://www.instagram.com/hac.q.uebord/" style="color:inherit" target="_blank">INSTAGRAM</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTACT BLOCK -->
+
+    <!-- START SECOND CONTENT BLOCK -->
+
+    <div class="container-fluid alert alert-warning copyright">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <p>© Copyright - Written and coded by HQ Webdesign</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- END SECOND CONTENT BLOCK -->
+    <script type="text/javascript" src="portfolio.js"></script>
 </body>
 
 </html>
