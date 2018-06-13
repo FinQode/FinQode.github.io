@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="log.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- START NAV BAR -->
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="active nav-link" href="portfolio.html#take-of">TAKE-OF</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html#about-me">ABOUT ME</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle-split" href="portfolio.html#projects" id="navbardrop" data-toggle="dropdown">PROJECTS</a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a class="dropdown-item" href="surveyForm.html">Survey Form</a>
+                        <a class="dropdown-item text-white bg-secondary" href="hq-fs.html">Website HQ-FS</a>
+                        <a class="dropdown-item" href="portfolio.html">Portfolio Website</a>
+                        <a class="dropdown-item text-white bg-secondary" href="https://codepen.io/hq_coder/full/gzKOQL/">Tribute Page</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle-split" href="portfolio.html#goals" id="navbardrop" data-toggle="dropdown">DEVELOPMENT</a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a class="dropdown-item text-white bg-secondary" href="log.html">Event Log</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html#support">SUPPORT</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END NAV BAR -->
+
+    <!-- START CONTENT TIMELINE -->
+    <!-- IN THE FUTURE THERE WILL BE A DYNAMIC TIMELINE CREATED BY MYSELF -->
+    <!-- This will be the future submission form to submit new events to the timeline below. -->
+    <!-- This is the start of the timeline content/events-->
+    <!-- START FUTURE SUBMISSION FORM OF NEW EVENTS -->
+    <div class="container-fluid newEventForm">
+        <div class="row" style="display:flex; justify-content:space-between">
+            <button type="button" class="btn btn-outline-success m-2" data-toggle="modal" data-target="#addEvent">
+                    Add event
+            </button>
+            <div class="modal fade" id="addEvent">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Specify details of new event</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Space for adding form buttons and write information
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-warning m-2" data-toggle="modal" data-target="#editEvent">Edit event</button>
+                <!-- Modal practice run -->
+                <!-- The modal - The modal itself is the 'popup screen' entirely. See this is a big DIV in which everything
+                is included. The button refers to the id that will be given to the ENTIRE DIV -->
+                <div class="modal fade" id="editEvent">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <!-- Modal header, the title of the modal -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Change the details of this event</h4>
+                                <!-- This adds the 'x' button at the top right of the screen to close -->
+                                <button type="button" class="close" data-dismiss="moda">&times;</button>
+                            </div>
+                            <!-- Modal body, this is the place where the form data will be added -->
+                            <div class="modal-body">
+                                Space for adding the fields that can be edited
+                            </div>
+                            <!-- Modal footer, this is the closing button -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-danger m-2" data-toggle="modal" data-target="#deleteEvent">Delete event</button>
+                <div class="modal fade" id="deleteEvent">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Delete this event</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                This action will delete this event from the logbook. Are you sure you want to continue?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FUTURE SUBMISSION FORM -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center jumbotron jumbotron-fluid alert" ID="eventLog">
+                <h6>EVENT LOG</h6>
+            </div>
+        </div>
+    </div>
+    <!-- PROJECTS LOG -->
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-sm-12 text-white p-1" id="log3"></div>
+            <div class="col-sm-12 text-white p-1" id="log2"></div>
+            <div class="col-sm-12 text-white p-1" id="log1"></div>
+            <div class="col-sm-12 text-white p-1" id="log0"></div>
+        </div>
+    </div>
+    <!-- TECHNICAL LOG -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center jumbotron jumbotron-fluid alert" id="techsLog">
+                <h6>TECH LOG</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <div class="row">
+
+            <div class="col-sm-12 text-white p-1" id="tech2"></div>
+            <div class="col-sm-12 text-white p-1" id="tech1"></div>
+            <div class="col-sm-12 text-white p-1" id="tech0"></div>
+        </div>
+    </div>
+
+    <!-- END CONTENT TIMELINE -->
+    <!-- START CONTACT BLOCK -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center jumbotron jumbotron-fluid alert social-media" id="social-media">
+                <button type="button" class="btn btn-outline-warning"><a href="https://www.linkedin.com/in/marcus-hacquebord" style="color:inherit" target="_blank">LINKEDIN</a></button>
+                <button type="button" class="btn btn-outline-warning"><a href="https://www.instagram.com/hac.q.uebord/" style="color:inherit" target="_blank">INSTAGRAM</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTACT BLOCK -->
+
+    <!-- START SECOND CONTENT BLOCK -->
+
+    <div class="container-fluid alert alert-warning">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <p>© Copyright - Written and coded by HQ Webdesign</p>
+            </div>
+        </div>
+    </div>
+    <!-- END SECOND CONTENT BLOCK -->
+    <script type="text/javascript" src="portfolio.js"></script>
+</body>
+
+</html>
