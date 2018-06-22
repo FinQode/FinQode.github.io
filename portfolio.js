@@ -4,6 +4,9 @@ $(document).ready(function() {
     FROM ALL LOGS AND SEND IT TO THE APPROPRIATE PART IN THE DOM */
 
     var eventLog = [{
+            "date": "22-06-2018",
+            "event": "Build <a style=\"color:white\" href=\"productlanding.html\">Product Landing Page</a> template to be used as service section on my business website"
+        }, {
             "date": "11-06-2018",
             "event": "Build <a style=\"color:white\" href=\"surveyForm.html\">Survey Form</a> template to be used as part of my BSc thesis in finance and accounting"
         }, {
