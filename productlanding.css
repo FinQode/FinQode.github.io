@@ -103,7 +103,8 @@
     /* Lay out each item using flex layout */
     flex-flow: column;
     /* Lay out item’s contents vertically  */
-    width: 32vw;
+    max-width: 400px;
+    flex-grow: initial;
     height: auto;
     padding: 0.5vw;
 }
@@ -142,7 +143,7 @@
 }
 
 .service-item>p {
-    font-size: 1.1vw;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -150,7 +151,7 @@
     list-style-type: none;
     text-align: center;
     padding: 0px;
-    font-size: 1.1vw;
+    font-size: 15px;
 }
 
 .service-item>ul>li {

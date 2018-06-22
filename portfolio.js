@@ -5,6 +5,9 @@ $(document).ready(function() {
 
     var eventLog = [{
             "date": "22-06-2018",
+            "event": "Build <a style=\"color:white\" href=\"docpage.html\">Technical Documentation Page</a> about the financial report."
+        }, {
+            "date": "22-06-2018",
             "event": "Build <a style=\"color:white\" href=\"productlanding.html\">Product Landing Page</a> template to be used as service section on my business website"
         }, {
             "date": "11-06-2018",
