@@ -1,0 +1,111 @@
+/* Header styling */
+
+* {
+    font-family: raleway;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1vw;
+}
+
+
+/* Navigation menu */
+
+.nav {
+    display: flex;
+    line-height: 2vw;
+}
+
+.nav>ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav>ul>li {
+    width: 150px;
+}
+
+
+/*Styling service item container */
+
+#services {
+    display: flex;
+    /* Flex layout so items have equal height  */
+    flex-flow: row wrap;
+    /* Allow items to wrap into multiple lines */
+}
+
+
+/* Start styling of each service item as a group */
+
+.service-item {
+    display: flex;
+    /* Lay out each item using flex layout */
+    flex-flow: column;
+    /* Lay out item’s contents vertically  */
+    max-width: 20vw;
+    height: auto;
+    padding: 0.5vw;
+}
+
+.service-item:hover {
+    transform: scale(1.1);
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.service-item>img {
+    order: -1;
+    /* Shift image before other content (in visual order) */
+    align-self: center;
+    /* Center the image cross-wise (horizontally)         */
+    width: 10vw;
+    height: 10vw;
+}
+
+.service-item>h1 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    text-align: center;
+    height: 50px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.service-item>p {
+    font-size: 1.1vw;
+    text-align: justify;
+}
+
+.service-item>ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    font-size: 1.1vw;
+}
+
+.service-item>ul>li {
+    display: flex;
+    flex-flow: column;
+}
+
+.item-explain {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.item-explain>p {
+    text-align: justify;
+}
+
+.service-item>ul>li:not(:target):not(:hover)>ul {
+    visibility: collapse;
+    display: none;
+}
+
+.service-item>button {
+    margin-top: auto;
+    /* Auto top margin pushes button to bottom */
+}
