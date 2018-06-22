@@ -7,8 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="productlanding.css">
-    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
-    "></script>
+    <style>
+        #section {
+            display: flex;
+        }
+        
+        @media (min-width: 650px) and (max-width:960px) {
+            .service-item {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 425px) {
+            .service-item {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
 <body>
@@ -18,33 +38,49 @@ and leave it to what it is just to pass the project. -->
     <header id="header">
         <div class="header">
             <div class="logo-area">
-                <img class="logo-name" src="name_only.png">
+                <img class="logo-name" src="https://preview.ibb.co/e0DS78/Logo_2018_Final_Version.png" id="header-img" alt="LOGO">
             </div>
             <div>
-                <nav class="nav">
+                <nav class="nav" id="nav-bar">
                     <ul>
-                        <li>HOME</li>
-                        <li>ABOUT</li>
-                        <li>SERVICES</li>
-                        <li>DEVELOPMENT</li>
-                        <li>PORTAL</li>
+                        <li><a class="nav-link" href="#home">HOME</a></li>
+                        <li><a class="nav-link" href="#about-start">ABOUT</a></li>
+                        <li><a class="nav-link" href="#services-start">SERVICES</a></li>
+                        <li><a class="nav-link" href="#portal-start">PORTAL</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
+    <!-- This is an introduction video about cloud based accounting -->
+    <article id="home">
+        <h1 class="section-header"></h1>
+    </article>
+    <section class="sections">
+        <article class="video">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/kgEg6DjQF8s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </article>
+    </section>
+
+    <!-- This is about the services on this website and cloud based accounting -->
+    <article id="about-start">
+        <h1 class="section-header"></h1>
+    </article>
 
     <!-- This is where the services section starts, written to be styled with flexbox in CSS -->
-    <section id="services">
+    <article id="services-start">
+        <h1 class="section-header"></h1>
+    </article>
+    <section class="sections" id="services">
         <!-- Service item 1 -->
         <section class="service-item">
-            <h1>Jaarrapport</h1>
+            <h2>Jaarrapport</h2>
             <p>Met het jaarrapport krijgt u meer inzicht in hoe u het afgelopen jaar heeft gedraaid met o.a. de volgende overzichten: </p>
             <ul>
                 <li><a href="#">Fisale positie</a>
                     <ul class="item-explain">
-                        <p>De fiscale positie is een schematische opstelling van het resultaat uit uw onderneming, fiscale ondernemersfaciliteiten en overige aftrekposten.</p>
+                        <p></p>
                     </ul>
                     <li>Organisatie ontwikkeling
                         <li>Kasstroomoverzicht
@@ -58,7 +94,7 @@ and leave it to what it is just to pass the project. -->
         </section>
         <!-- Service item 2 -->
         <section class="service-item">
-            <h1>Aangifte Inkomstenbelasting</h1>
+            <h2>Aangifte Inkomstenbelasting</h2>
             <p>Met de aangifte inkomstenbelasting geeft u door aan de belastingdienst wat uw inkomen is geweest uit diverse bronnen. Deze bronnen zijn:</p>
             <ul>
                 <li><a href="#">Werk en woning</a>
@@ -74,7 +110,7 @@ and leave it to what it is just to pass the project. -->
         </section>
         <!-- Service item 3 -->
         <section class="service-item">
-            <h1>Facturatie</h1>
+            <h2>Facturatie</h2>
             <p>Tijdige facturatie is belangrijk voor de continuiteit van uw onderneming. Geef dit nu uit handen en leg uw focus op operationele zaken.</p>
             <ul>
                 <li><a href="#">Automatisch</a>
@@ -88,8 +124,35 @@ and leave it to what it is just to pass the project. -->
             <img src="invoicing.jpg" alt="Example picture of a financial report">
             <button href="#" class="btn btn-primary">Contact us now</button>
         </section>
-
     </section>
+
+
+    <!-- This is the portal section -->
+    <article id="portal-start">
+        <h1 class="section-header"></h1>
+    </article>
+    <section class="sections" id="portal">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <div id="form-items">
+                <div><label for="#login">Stuur mij meer informatie naar het volgende emailadres:</label>
+                </div>
+                <div>
+                    <input type="email" placeholder="Uw emailadres" id="email" name="email">
+                    <input id="submit" type="submit" value="Verstuur" class="btn btn-primary"></input>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Copyright section -->
+    <div class="copyright">
+        <div>
+            <div>
+                © Copyright - Written and coded by HQ Webdesign
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

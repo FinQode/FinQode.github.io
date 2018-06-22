@@ -1,13 +1,43 @@
-/* Header styling */
+/* All styling */
 
 * {
     font-family: raleway;
 }
 
+
+/* Section header styling, based on main menu */
+
+.section-header {
+    width: 100%;
+    height: 7vh;
+    text-align: center;
+    font-size: 5vh;
+    line-height: 7vh;
+    background-color: white;
+    color: #007bff;
+    font-weight: 100;
+    letter-spacing: 0.1vw;
+    padding: 20px 0px 20px 0px;
+    display: none;
+}
+
+
+/* Header styling */
+
 .header {
     display: flex;
     justify-content: space-around;
     padding: 1vw;
+    background-color: transparent;
+    position: fixed;
+    right: 0px;
+}
+
+.logo-name {
+    display: none;
+    line-height: 3vw;
+    width: 160px;
+    height: 100px;
 }
 
 
@@ -15,26 +45,54 @@
 
 .nav {
     display: flex;
-    line-height: 2vw;
+    margin-bottom: 10px;
 }
 
 .nav>ul {
     display: flex;
     list-style-type: none;
+    text-align: center;
 }
 
 .nav>ul>li {
-    width: 150px;
+    width: 12vw;
+    letter-spacing: 0.1vw;
 }
 
 
-/*Styling service item container */
+/* Home styling */
+
+#home {
+    height: 100px;
+}
+
+
+/* Video section */
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* General sections*/
+
+.sections {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Service item container */
 
 #services {
     display: flex;
     /* Flex layout so items have equal height  */
     flex-flow: row wrap;
     /* Allow items to wrap into multiple lines */
+    justify-content: center;
+    width: auto;
 }
 
 
@@ -45,15 +103,23 @@
     /* Lay out each item using flex layout */
     flex-flow: column;
     /* Lay out item’s contents vertically  */
-    max-width: 20vw;
+    width: 32vw;
     height: auto;
     padding: 0.5vw;
 }
 
 .service-item:hover {
-    transform: scale(1.1);
-    border: 5px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0 0px 100px rgba(0, 100, 255, 0.6), 0 6px 6px rgba(0, 100, 255, .6);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#services:hover .service-item:not(:hover) {
+    opacity: 0.4;
 }
 
 .service-item>img {
@@ -61,11 +127,12 @@
     /* Shift image before other content (in visual order) */
     align-self: center;
     /* Center the image cross-wise (horizontally)         */
-    width: 10vw;
-    height: 10vw;
+    width: 9vw;
+    height: 17vh;
+    padding: 1vh 0vw 0vh 0vw;
 }
 
-.service-item>h1 {
+.service-item>h2 {
     font-size: 1.5vw;
     text-transform: uppercase;
     text-align: center;
@@ -76,7 +143,7 @@
 
 .service-item>p {
     font-size: 1.1vw;
-    text-align: justify;
+    text-align: center;
 }
 
 .service-item>ul {
@@ -89,6 +156,25 @@
 .service-item>ul>li {
     display: flex;
     flex-flow: column;
+}
+
+
+/* Media queries for service items */
+
+@media (min-width: 650px) and (max-width:960px) {
+    .service-item {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .service-item {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 }
 
 .item-explain {
@@ -108,4 +194,36 @@
 .service-item>button {
     margin-top: auto;
     /* Auto top margin pushes button to bottom */
+}
+
+
+/* Styling form section */
+
+#email::placeholder {
+    padding-left: 5px;
+}
+
+.portal {
+    text-align: center;
+}
+
+#form-items {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* Copyright */
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    color: #007bff;
+    background-color: rgba(0, 0, 0, 0.1);
 }
